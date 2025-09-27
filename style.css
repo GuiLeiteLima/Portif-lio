@@ -55,7 +55,7 @@ body {
 }
 
 .intro h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -101,10 +101,10 @@ body {
 /* Imagens ajustáveis */
 
 img{position: absolute;
-    left: 100px;
+    left: 60px;
     bottom: 47px ;
-   width: 700px;
-    height: 700px;
+   width: 500px;
+    height: 500px;
 }
 
 /* Responsividade */
@@ -132,10 +132,10 @@ img{position: absolute;
     font-size: 1.3rem;
   }
 img{position: absolute;
-    left: 20px;
+    left: 10px;
     bottom: 47px ;
-   width: 300px;
-    height: 300px;
+   width: 200px;
+    height: 200px;
 }
   .intro p {
     font-size: 0.9rem;
@@ -156,3 +156,4 @@ iframe{
     width: 350px;
 }
 }
+
