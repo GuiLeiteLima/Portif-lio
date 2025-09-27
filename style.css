@@ -48,14 +48,14 @@ body {
 .site-main {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   text-align: center;
   padding: 2rem;
 }
 
 .intro h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -101,10 +101,10 @@ body {
 /* Imagens ajustáveis */
 
 img{position: absolute;
-    left: 60px;
+    left: 100px;
     bottom: 47px ;
-   width: 300px;
-    height: 300px;
+   width: 450px;
+    height: 450px;
 }
 
 /* Responsividade */
@@ -132,19 +132,19 @@ img{position: absolute;
     font-size: 1.3rem;
   }
 img{position: absolute;
-    left: 10px;
+    left: 20px;
     bottom: 47px ;
-   width: 100px;
-    height: 100px;
+   width: 300px;
+    height: 300px;
 }
   .intro p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   .post-caption {
   background: rgba(0, 0, 0, 0.116); 
   padding: 0.5rem;
   width: 350px;
-  font-size: 0.95rem;
+  font-size: 0.94rem;
   text-align: center;
   color: #fff;
   max-width: 100%;
@@ -156,5 +156,3 @@ iframe{
     width: 350px;
 }
 }
-
-
