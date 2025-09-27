@@ -1,0 +1,158 @@
+/* Reset simples */ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte base */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  min-height: 100vh;
+
+  /* Degradê de fundo roxo */
+  background: linear-gradient(135deg, #0d25ad, #2b5ce4);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho */
+.site-header {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* permite quebrar em telas pequenas */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #0cffff;
+}
+
+/* Conteúdo principal */
+.site-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.intro h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.6rem;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Rodapé */
+.site-footer {
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Legenda do vídeo (ajusta à largura do player) */
+.post-caption {
+  background: rgba(0, 0, 0, 0.116); 
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  width: 560px;
+  text-align: center;
+  color: #fff;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Área de foto */
+.foto {
+  background-color: blue;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  padding: 1rem;
+}
+
+/* Imagens ajustáveis */
+
+img{position: absolute;
+    left: 100px;
+    bottom: 47px ;
+   width: 700px;
+    height: 700px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    margin-top: 0.5rem;
+  }
+
+  .main-nav a {
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h2 {
+    font-size: 1.3rem;
+  }
+img{position: absolute;
+    left: 20px;
+    bottom: 47px ;
+   width: 300px;
+    height: 300px;
+}
+  .intro p {
+    font-size: 0.9rem;
+  }
+  .post-caption {
+  background: rgba(0, 0, 0, 0.116); 
+  padding: 0.5rem;
+  width: 350px;
+  font-size: 0.95rem;
+  text-align: center;
+  color: #fff;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+iframe{
+    width: 350px;
+}
+}
