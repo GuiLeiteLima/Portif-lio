@@ -48,22 +48,30 @@ body {
 .site-main {
   flex: 1;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   text-align: center;
   padding: 2rem;
 }
 
+.site-main2 {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: left;
+  padding: 2rem;
+}
 .intro h2 {
   font-size: 4rem;
   margin-bottom: 1rem;
 }
 
 .intro p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   max-width: 500px;
   margin: 0 auto;
-  line-height: 1.5;
+  line-height: 1.0;
 }
 
 /* Rodapé */
@@ -100,11 +108,22 @@ body {
 
 /* Imagens ajustáveis */
 
-img{position: absolute;
+img{
+  background-color: #98b6dd;
+  padding: 10px ;
+  border-radius: 100%;  
+  position: absolute;
     left: 100px;
-    bottom: 47px ;
-   width: 450px;
-    height: 450px;
+    bottom: 60px ;
+   width: 400px;
+    height: 400px;
+    animation: flutuar 2s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); } /* sobe 10px */
+    100% { transform: translateY(0); }
 }
 
 /* Responsividade */
@@ -134,8 +153,8 @@ img{position: absolute;
 img{position: absolute;
     left: 20px;
     bottom: 47px ;
-   width: 300px;
-    height: 300px;
+   width: 150px;
+    height: 150px;
 }
   .intro p {
     font-size: 0.7rem;
